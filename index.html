@@ -1,0 +1,1442 @@
+
+<!DOCTYPE html>
+<html lang="ml">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>കേരളത്തിലെ ഇടതുപക്ഷ ഭരണം: വികസനത്തിന്റെ യാഥാർത്ഥ്യവും യുഡിഎഫിന്റെ പരാജയങ്ങളും</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #059669;
+            --accent: #dc2626;
+            --neutral: #374151;
+            --base-100: #ffffff;
+            --base-200: #f8fafc;
+            --base-300: #e2e8f0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--neutral);
+            overflow-x: hidden;
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(5, 150, 105, 0.8) 100%);
+        }
+        
+        .toc-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            background: var(--base-100);
+            border-right: 1px solid var(--base-300);
+            overflow-y: auto;
+            z-index: 50;
+            padding: 2rem 1.5rem;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        
+        .toc-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            margin: 0.25rem 0;
+            border-radius: 0.5rem;
+            color: var(--neutral);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+        }
+        
+        .toc-link:hover {
+            background: var(--base-200);
+            color: var(--primary);
+        }
+        
+        .toc-link.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .citation {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            text-decoration: none;
+            margin: 0 0.125rem;
+            font-weight: 500;
+        }
+        
+        .citation:hover {
+            background: var(--accent);
+            color: white;
+        }
+        
+        @media (max-width: 1024px) {
+            .toc-fixed {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+            .hero-description {
+                font-size: 1rem;
+            }
+            .hero-overlay .text-white {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+  <base target="_blank">
+</head>
+
+  <body class="bg-slate-50">
+    <!-- Fixed Table of Contents -->
+    <nav class="toc-fixed">
+      <div class="mb-6">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">പട്ടിക</h3>
+      </div>
+
+      <div class="space-y-1">
+        <a href="#introduction" class="toc-link">
+          <i class="fas fa-flag w-4 text-center mr-3"></i>
+          ആമുഖം
+        </a>
+        <a href="#udf-failures" class="toc-link">
+          <i class="fas fa-exclamation-triangle w-4 text-center mr-3"></i>
+          യുഡിഎഫ് പരാജയങ്ങൾ
+        </a>
+        <a href="#planning-decline" class="toc-link">
+          <i class="fas fa-chart-line-down w-4 text-center mr-3"></i>
+          ആസൂത്രണ തകർച്ച
+        </a>
+        <a href="#social-security" class="toc-link">
+          <i class="fas fa-shield-alt w-4 text-center mr-3"></i>
+          സാമൂഹിക സുരക്ഷ
+        </a>
+        <a href="#center-state" class="toc-link">
+          <i class="fas fa-balance-scale w-4 text-center mr-3"></i>
+          കേന്ദ്ര-സംസ്ഥാന ബന്ധം
+        </a>
+        <a href="#corruption" class="toc-link">
+          <i class="fas fa-gavel w-4 text-center mr-3"></i>
+          അഴിമതിയും പ്രീണനവും
+        </a>
+        <a href="#development-opposition" class="toc-link">
+          <i class="fas fa-hand-paper w-4 text-center mr-3"></i>
+          വികസന വിരുദ്ധത
+        </a>
+        <a href="#ldf-achievements" class="toc-link">
+          <i class="fas fa-trophy w-4 text-center mr-3"></i>
+          എൽഡിഎഫ് നേട്ടങ്ങൾ
+        </a>
+        <a href="#other-states" class="toc-link">
+          <i class="fas fa-map-marked-alt w-4 text-center mr-3"></i>
+          മറ്റ് സംസ്ഥാനങ്ങൾ
+        </a>
+        <a href="#conclusion" class="toc-link">
+          <i class="fas fa-lightbulb w-4 text-center mr-3"></i>
+          ഉപസംഹാരം
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Hero Section -->
+      <section class="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 overflow-hidden">
+        <div class="hero-overlay absolute inset-0"></div>
+
+        <div class="relative z-10 container mx-auto px-6 py-12">
+          <!-- Grid Layout -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen">
+            <!-- Left: Title and Introduction -->
+            <div class="space-y-8 hero-grid">
+              <div class="space-y-6">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight hero-title">
+                  <span class="serif italic block text-4xl lg:text-5xl text-blue-200 mb-2">കേരളത്തിലെ</span>
+                  ഇടതുപക്ഷ ഭരണം
+                </h1>
+                <p class="text-xl lg:text-2xl text-blue-100 font-light leading-relaxed hero-subtitle">
+                  വികസനത്തിന്റെ യാഥാർത്ഥ്യവും യുഡിഎഫിന്റെ പരാജയങ്ങളും
+                </p>
+              </div>
+
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <p class="text-white/90 text-lg leading-relaxed">
+                  2016 മുതൽ കേരളത്തിൽ എൽഡിഎഫ് ഭരണം നടപ്പാക്കിയ ജനകേന്ദ്രീകൃത വികസന മാതൃക,
+                  യുഡിഎഫിന്റെ നവഉദാരവൽക്കരണ സമീപനത്തിന് വ്യക്തമായ ബദലായി.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right: Visual Elements and Stats -->
+            <div class="space-y-8">
+              <!-- Key Statistics Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-3xl font-bold text-white mb-2">580/600</div>
+                  <div class="text-blue-200 text-sm">നിറവേറ്റിയ വാഗ്ദാനങ്ങൾ</div>
+                </div>
+                <div class="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-3xl font-bold text-white mb-2">₹2000</div>
+                  <div class="text-blue-200 text-sm">ക്ഷേമ പെൻഷൻ</div>
+                </div>
+                <div class="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-3xl font-bold text-white mb-2">62 ലക്ഷം</div>
+                  <div class="text-blue-200 text-sm">ഗുണഭോക്താക്കൾ</div>
+                </div>
+                <div class="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-3xl font-bold text-white mb-2">96.7%</div>
+                  <div class="text-blue-200 text-sm">നിറവേറ്റൽ നിരക്ക്</div>
+                </div>
+              </div>
+
+              <!-- Visual Element -->
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+                <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="Kerala development projects collage" class="w-full h-48 object-cover rounded-lg mb-4" size="medium" aspect="wide" style="photo" query="Kerala development projects" referrerpolicy="no-referrer" />
+                <p class="text-white/80 text-sm text-center">
+                  എൽഡിഎഫ് ഭരണത്തിലെ പ്രധാന വികസന പദ്ധതികൾ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Introduction Section -->
+      <section id="introduction" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 serif">ആമുഖം: രണ്ട് ഭരണമാതൃകകളുടെ താരതമ്യം</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                <h3 class="text-xl font-bold text-red-800 mb-4">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  യുഡിഎഫിന്റെ നവഉദാരവൽക്കരണ സമീപനം
+                </h3>
+                <p class="text-red-700 leading-relaxed">
+                  യുഡിഎഫ് പിന്തുടർന്നത് <strong>"നവ ഉദാരവൽക്കരണ" (Neoliberal) വികസന മാതൃക</strong> ആയിരുന്നു,
+                  ഇത് സാധാരണ ജനങ്ങളുടെ താൽപ്പര്യങ്ങളെക്കാൾ വൻകിട ബിസിനസ് ഗ്രൂപ്പുകൾക്കും
+                  കോർപ്പറേറ്റ് താൽപ്പര്യങ്ങൾക്കും മുൻഗണന നൽകുന്ന ഒന്നായിരുന്നു
+                  <a href="https://fiveable.me/key-terms/ap-hug/neoliberal-policies" class="citation" target="_blank">[1]</a>
+                  <a href="https://www.investopedia.com/terms/n/neoliberalism.asp" class="citation" target="_blank">[2]</a>.
+                </p>
+              </div>
+
+              <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+                <h3 class="text-xl font-bold text-green-800 mb-4">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  എൽഡിഎഫിന്റെ ജനകേന്ദ്രീകൃത വികസനം
+                </h3>
+                <p class="text-green-700 leading-relaxed">
+                  2016-ൽ അധികാരത്തിലേറിയ എൽഡിഎഫ് സർക്കാർ <strong>"നവകേരളം" (Navakeralam)</strong> എന്ന
+                  ആശയം മുന്നോട്ടുവെച്ചു. സാമ്പത്തിക വളർച്ചയും സാമൂഹിക പുരോഗതിയും
+                  പരസ്പരപൂരകങ്ങളാക്കി കാണുന്ന സമഗ്ര സമീപനമായിരുന്നു ഇത്.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <h3 class="text-lg font-bold text-blue-800 mb-3">
+                <i class="fas fa-target mr-2"></i>
+                ലേഖനത്തിന്റെ ഉദ്ദേശ്യം
+              </h3>
+              <p class="text-blue-700">
+                യുഡിഎഫ് ഭരണകാലത്തെ പരാജയങ്ങളും അപൂർണ്ണ വാഗ്ദാനങ്ങളും വസ്തുനിഷ്ഠമായ തെളിവുകളുടെ
+                അടിസ്ഥാനത്തിൽ വിശകലനം ചെയ്യുകയും എൽഡിഎഫ് ഭരണത്തിന്റെ നേട്ടങ്ങൾ
+                അതേ മാനദണ്ഡത്തിൽ വിലയിരുത്തുകയും ചെയ്യുക എന്നതാണ് ഈ ലേഖനത്തിന്റെ പ്രധാന ലക്ഷ്യം.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UDF Failures Section -->
+      <section id="udf-failures" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              യുഡിഎഫ് ഭരണത്തിലെ അടിസ്ഥാന സൗകര്യ പദ്ധതികളുടെ സ്തംഭനം
+            </h2>
+
+            <!-- NH 66 Development Failure -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="bg-red-100 p-3 rounded-lg">
+                  <i class="fas fa-road text-red-600 text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                    ദേശീയപാത 66 വികസനത്തിന്റെ തകർച്ച
+                  </h3>
+                  <p class="text-gray-600">ഞെട്ടിപ്പിക്കുന്ന പരാജയത്തിന്റെ കഥ</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800 mb-4">
+                    ഭൂമി ഏറ്റെടുക്കൽ പ്രതിസന്ധിയും എൻഎച്ച്എഐയുടെ പിൻവാങ്കലും
+                  </h4>
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    ദേശീയപാത 66-ന്റെ കേരളത്തിലെ വികസനം യുഡിഎഫ് ഭരണകാലത്ത് അതീവ ഗുരുതരമായ
+                    പ്രതിസന്ധികളിൽ നിന്ന് കടന്നുപോയി. ഭൂമി ഏറ്റെടുക്കൽ പ്രക്രിയയിലെ
+                    അവ്യവസ്ഥയും രാഷ്ട്രീയ ഇടപെടലുകളും കാരണം പദ്ധതി പൂർണ്ണമായും സ്തംഭിച്ചു
+                    <a href="http://www.people.umass.edu/dmkotz/Glob_and_NL_02.pdf" class="citation" target="_blank">[4]</a>.
+                  </p>
+
+                  <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <p class="text-red-800 font-semibold mb-2">
+                      <i class="fas fa-exclamation-triangle mr-2"></i>
+                      ഗുരുതരമായ പരിണിതി
+                    </p>
+                    <p class="text-red-700 text-sm">
+                      ഈ പ്രതിസന്ധിയുടെ ഫലമായി <strong>എൻഎച്ച്എഐ കേരളത്തിലെ തന്റെ ഓഫീസുകൾ
+                        പൂട്ടി മടങ്ങിപ്പോകേണ്ട അവസ്ഥ വരെ എത്തി</strong>
+                      <a href="https://onlineresearchjournals.com/ijopagg/art/136.pdf" class="citation" target="_blank">[6]</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="National Highway 66 in Kerala showing development challenges" class="w-full h-64 object-cover rounded-lg" size="medium" aspect="wide" style="photo" query="National Highway 66 Kerala construction issues" referrerpolicy="no-referrer" />
+                  <p class="text-sm text-gray-600 mt-2 text-center">
+                    യുഡിഎഫ് കാലത്ത് ദേശീയപാത 66-ന്റെ അവസ്ഥ
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- GAIL Pipeline Failure -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="bg-orange-100 p-3 rounded-lg">
+                  <i class="fas fa-industry text-orange-600 text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                    ഗെയിൽ പൈപ്പ്‌ലൈൻ പദ്ധതിയുടെ ഉപേക്ഷണം
+                  </h3>
+                  <p class="text-gray-600">ഉപേക്ഷിക്കപ്പെട്ട വികസന സ്വപ്നം</p>
+                </div>
+              </div>
+
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                <strong>ഗെയിൽ (GAIL) പൈപ്പ്‌ലൈൻ പദ്ധതി യുഡിഎഫ് ഭരണത്തിൽ ഉപേക്ഷിക്കപ്പെട്ട
+                  മറ്റൊരു നിർണായക അടിസ്ഥാന സൗകര്യ പദ്ധതിയായിരുന്നു</strong>
+                <a href="https://socialistproject.ca/2021/12/neoliberalism-toll-peasants-workers-india/" class="citation" target="_blank">[8]</a>.
+                കൊച്ചി മുതൽ മംഗലൂരു വരെ 450 കിലോമീറ്റർ ദൈർഘ്യമുള്ള ഈ പ്രകൃതി വാതക
+                പൈപ്പ്‌ലൈൻ 2007-ൽ ആരംഭിച്ച് 2014-ൽ പൂർത്തിയാകേണ്ടതായിരുന്നു.
+              </p>
+
+              <div class="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                <h4 class="font-bold text-orange-800 mb-3">തടസ്സങ്ങളുടെ കാരണങ്ങൾ</h4>
+                <ul class="space-y-2 text-orange-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-times mr-2 mt-1 text-red-500"></i>
+                    വടക്കൻ കേരളത്തിലെ ജനവാസ കേന്ദ്രങ്ങളിലെ പ്രതിഷേധങ്ങൾ
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-times mr-2 mt-1 text-red-500"></i>
+                    യുഡിഎഫ് സർക്കാരിന്റെ ഫലപ്രദമായ മധ്യസ്ഥതയുടെ അഭാവം
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-times mr-2 mt-1 text-red-500"></i>
+                    പരിസ്ഥിതി ആശങ്കകളുടെ ദുരുപയോഗം
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-times mr-2 mt-1 text-red-500"></i>
+                    കോർപ്പറേറ്റ് താൽപ്പര്യങ്ങളുമായുള്ള സമരസങ്ങൾ
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Development Hell Analysis -->
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                <i class="fas fa-exclamation-circle text-red-600 mr-3"></i>
+                "വികസന നരകം" എന്ന അവസ്ഥ
+              </h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800 mb-3">ദീർഘവീക്ഷണമില്ലായ്മ</h4>
+                  <p class="text-gray-700 text-sm leading-relaxed">
+                    യുഡിഎഫ് ഭരണത്തിലെ അടിസ്ഥാന സൗകര്യ പദ്ധതികളുടെ സ്തംഭനത്തിന്റെ
+                    മൂലകാരണം <strong>ദീർഘവീക്ഷണമില്ലായ്മയും രാഷ്ട്രീയ ഇച്ഛാശക്തിയുടെ
+                      അഭാവവുമായിരുന്നു</strong>. തെരഞ്ഞെടുപ്പ് ചക്രങ്ങളെ മുന്നിൽക്കണ്ടുള്ള
+                    ചെറിയ കാലാവധി പ്രോജക്ടുകളിൽ മാത്രം ശ്രദ്ധ കേന്ദ്രീകരിച്ചു.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800 mb-3">കോർപ്പറേറ്റ് മുൻഗണന</h4>
+                  <p class="text-gray-700 text-sm leading-relaxed">
+                    യുഡിഎഫിന്റെ നവഉദാരവൽക്കരണ സമീപനം <strong>കോർപ്പറേറ്റ് താൽപ്പര്യങ്ങൾക്ക്
+                      മുൻഗണന നൽകുന്നതിൽ കലാശിച്ചു</strong>
+                    <a href="https://www.britannica.com/money/neoliberalism" class="citation" target="_blank">[3]</a>.
+                    പൊതു-സ്വകാര്യ പങ്കാളിത്തം മോഡലുകൾ അമിതമായി പ്രോത്സാഹിപ്പിച്ചു.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planning Decline Section -->
+      <section id="planning-decline" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              ആസൂത്രണ സംവിധാനത്തിന്റെ തകർച്ചയും എൽഡിഎഫിന്റെ പുനരുദ്ധാരണവും
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <!-- UDF's Planning Failure -->
+              <div class="bg-red-50 rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                  <div class="bg-red-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-building text-red-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-red-800">
+                    നെഹ്‌റുവിയൻ പാരമ്പര്യത്തിന്റെ വ്യാജ അവകാശവാദം
+                  </h3>
+                </div>
+
+                <p class="text-red-700 mb-4 leading-relaxed">
+                  കോൺഗ്രസ് പാർട്ടി <strong>ജവഹർലാൽ നെഹ്‌റുവിന്റെ ആസൂത്രണ പാരമ്പര്യം
+                    അവകാശപ്പെടുന്നുണ്ടെങ്കിലും, പ്രായോഗികമായി കോൺഗ്രസ് ഭരിക്കുന്ന
+                    സംസ്ഥാനങ്ങൾ പ്ലാനിംഗ് സംവിധാനം പൂർണ്ണമായും ഉപേക്ഷിച്ചു</strong>
+                  <a href="https://krfb.org/eng/ongoing-projects/" class="citation" target="_blank">[10]</a>.
+                </p>
+
+                <div class="space-y-3">
+                  <div class="flex items-start">
+                    <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                    <span class="text-red-700 text-sm">മേഖലാ വികസനത്തിലെ അസമത്വം</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                    <span class="text-red-700 text-sm">സാമൂഹിക സൂചകങ്ങളിലെ പിന്നോക്കം</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                    <span class="text-red-700 text-sm">അടിസ്ഥാന സൗകര്യങ്ങളുടെ അപര്യാപ്തത</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LDF's Planning Revival -->
+              <div class="bg-green-50 rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                  <div class="bg-green-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-green-800">
+                    എൽഡിഎഫിന്റെ പഞ്ചവത്സര പദ്ധതികൾ
+                  </h3>
+                </div>
+
+                <p class="text-green-700 mb-4 leading-relaxed">
+                  <strong>എൽഡിഎഫ് സർക്കാരിന്റെ ഏറ്റവും പ്രധാനപ്പെട്ട സംവിധാനപരമായ നവീകരണം
+                    വാർഷിക പുരോഗതി റിപ്പോർട്ടിംഗ് സമ്പ്രദായമാണ്</strong>. തെരഞ്ഞെടുപ്പ്
+                  പ്രകടനപത്രികയിലെ വാഗ്ദാനങ്ങൾ എത്രമാത്രം നിറവേറ്റപ്പെട്ടു എന്ന്
+                  വർഷംതോറും പൊതുജനങ്ങൾക്ക് മുന്നിൽ അവതരിപ്പിക്കുന്നു.
+                </p>
+
+                <div class="bg-white rounded-lg p-4 border border-green-200">
+                  <h4 class="font-bold text-green-800 mb-2">റിപ്പോർട്ടിംഗ് സമ്പ്രദായത്തിന്റെ പ്രധാന ഘടകങ്ങൾ</h4>
+                  <ul class="space-y-1 text-green-700 text-sm">
+                    <li>• ഓരോ വാഗ്ദാനത്തിന്റെയും നിലവിലെ സ്ഥിതി</li>
+                    <li>• പൂർത്തീകരണത്തിനുള്ള കാലാവധി</li>
+                    <li>• തടസ്സങ്ങളും അവ കടന്നുകളയുന്ന നടപടികളും</li>
+                    <li>• വിഭവ വിനിയോഗത്തിന്റെ വ്യക്തത</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Promise Fulfillment Statistics -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
+              <h3 class="text-2xl font-bold text-indigo-800 mb-6 text-center">
+                തെരഞ്ഞെടുപ്പ് വാഗ്ദാനങ്ങളുടെ നടത്തിപ്പ്
+              </h3>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                  <div class="text-2xl font-bold text-green-600 mb-1">97.9%</div>
+                  <div class="text-sm text-gray-600">സാമൂഹിക സുരക്ഷ</div>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                  <div class="text-2xl font-bold text-blue-600 mb-1">95.8%</div>
+                  <div class="text-sm text-gray-600">അടിസ്ഥാന സൗകര്യം</div>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                  <div class="text-2xl font-bold text-purple-600 mb-1">96.9%</div>
+                  <div class="text-sm text-gray-600">ആരോഗ്യ-വിദ്യാഭ്യാസം</div>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                  <div class="text-2xl font-bold text-orange-600 mb-1">96.6%</div>
+                  <div class="text-sm text-gray-600">തൊഴിൽ</div>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                  <div class="text-2xl font-bold text-teal-600 mb-1">96.1%</div>
+                  <div class="text-sm text-gray-600">കൃഷി-മത്സ്യബന്ധനം</div>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                  <div class="text-2xl font-bold text-red-600 mb-1">95.9%</div>
+                  <div class="text-sm text-gray-600">വ്യവസായം</div>
+                </div>
+              </div>
+
+              <div class="mt-6 text-center">
+                <div class="inline-flex items-center bg-indigo-100 rounded-full px-6 py-3">
+                  <span class="text-indigo-800 font-bold text-lg mr-2">മൊത്തം:</span>
+                  <span class="text-indigo-600 font-bold text-xl">600-ൽ 580 വാഗ്ദാനങ്ങൾ (96.7%)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Security Section -->
+      <section id="social-security" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              സാമൂഹിക സുരക്ഷയും ക്ഷേമ പെൻഷനുകളുടെ വർദ്ധനവും
+            </h2>
+
+            <!-- UDF vs LDF Pension Comparison -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <!-- UDF Era -->
+              <div class="bg-red-50 rounded-xl p-8 border-2 border-red-200">
+                <div class="flex items-center mb-6">
+                  <div class="bg-red-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-coins text-red-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-red-800">
+                    യുഡിഎഫ് കാലത്തെ പെൻഷന്റെ ദയനീയാവസ്ഥ
+                  </h3>
+                </div>
+
+                <div class="text-center mb-6">
+                  <div class="text-4xl font-bold text-red-600 mb-2">₹600</div>
+                  <div class="text-red-700">മാസപെൻഷൻ (2011-2016)</div>
+                </div>
+
+                <div class="space-y-4">
+                  <div class="bg-white rounded-lg p-4 border border-red-200">
+                    <h4 class="font-bold text-red-800 mb-2">
+                      <i class="fas fa-exclamation-triangle mr-2"></i>
+                      18 മാസത്തെ കുടിശ്ശിക
+                    </h4>
+                    <p class="text-red-700 text-sm">
+                      2014-2016 കാലഘട്ടത്തിൽ പല മാസങ്ങളിലും പെൻഷൻ വിതരണം
+                      നടന്നില്ല. ഈ കുടിശ്ശിക സർക്കാരിന്റെ ധനകാര്യ അവ്യവസ്ഥയുടെ
+                      സാക്ഷ്യപത്രമാണ്
+                      <a href="https://www.jac.com.cn/u/cms/www/202411/011535268qqf.pdf" class="citation" target="_blank">[13]</a>.
+                    </p>
+                  </div>
+
+                  <div class="text-red-700 text-sm">
+                    <strong>പരിണിതി:</strong> വയോധികരുടെ ആരോഗ്യപരമായ പ്രശ്നങ്ങൾ,
+                    ഭക്ഷണക്ഷാമം, മാനസിക ആഘാതം, കുടുംബങ്ങളിലെ സാമ്പത്തിക ബാധ്യത
+                  </div>
+                </div>
+              </div>
+
+              <!-- LDF Era -->
+              <div class="bg-green-50 rounded-xl p-8 border-2 border-green-200">
+                <div class="flex items-center mb-6">
+                  <div class="bg-green-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-arrow-trend-up text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-green-800">
+                    എൽഡിഎഫിന്റെ പടിയേറ്റ വർദ്ധനവ്
+                  </h3>
+                </div>
+
+                <div class="text-center mb-6">
+                  <div class="text-4xl font-bold text-green-600 mb-2">₹2000</div>
+                  <div class="text-green-700">മാസപെൻഷൻ (2025-26)</div>
+                </div>
+
+                <div class="space-y-4">
+                  <div class="bg-white rounded-lg p-4 border border-green-200">
+                    <h4 class="font-bold text-green-800 mb-2">
+                      <i class="fas fa-chart-line mr-2"></i>
+                      പടിപടിയായ വർദ്ധന
+                    </h4>
+                    <div class="space-y-1 text-green-700 text-sm">
+                      <div>2016: ₹1000 (67% വർദ്ധന)</div>
+                      <div>2018: ₹1100</div>
+                      <div>2019: ₹1200</div>
+                      <div>2021: ₹1500</div>
+                      <div>2025: ₹2000 (233% വർദ്ധന)</div>
+                    </div>
+                  </div>
+
+                  <div class="text-green-700 text-sm">
+                    <strong>പ്രത്യാഘാതം:</strong> ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന
+                    സംസ്ഥാന പെൻഷൻ, 62 ലക്ഷം ഗുണഭോക്താക്കൾ
+                    <a href="https://morningstaronline.co.uk/article/inspiring-progress-kerala-under-its-left-government" class="citation" target="_blank">[97]</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- National Comparison -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                ദേശീയ തലത്തിലുള്ള കേരളത്തിന്റെ മുന്നേറ്റം
+              </h3>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-green-100 rounded-lg p-4 text-center">
+                  <div class="text-2xl font-bold text-green-600 mb-1">₹2000</div>
+                  <div class="text-sm text-green-700 font-semibold">കേരളം</div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center">
+                  <div class="text-xl font-bold text-gray-600 mb-1">₹1000</div>
+                  <div class="text-sm text-gray-700">തമിഴ്നാട്</div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center">
+                  <div class="text-xl font-bold text-gray-600 mb-1">₹800</div>
+                  <div class="text-sm text-gray-700">കർണാടക</div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center">
+                  <div class="text-xl font-bold text-gray-600 mb-1">₹1000</div>
+                  <div class="text-sm text-gray-700">ആന്ധ്രപ്രദേശ്</div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center">
+                  <div class="text-xl font-bold text-gray-600 mb-1">₹1000</div>
+                  <div class="text-sm text-gray-700">തെലങ്കാന</div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center">
+                  <div class="text-xl font-bold text-gray-600 mb-1">₹500</div>
+                  <div class="text-sm text-gray-700">ഉത്തർപ്രദേശ്</div>
+                </div>
+              </div>
+
+              <div class="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                <p class="text-green-800 text-center font-semibold">
+                  <i class="fas fa-trophy mr-2"></i>
+                  ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന സംസ്ഥാന പെൻഷൻ നിരക്ക് - 62 ലക്ഷം ഗുണഭോക്താക്കൾ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Center-State Relations Section -->
+      <section id="center-state" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              കേന്ദ്ര-സംസ്ഥാന ബന്ധങ്ങളിലെ വിധേയത്വവും പ്രതിരോധവും
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <!-- UDF's Subservient Approach -->
+              <div class="bg-red-50 rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                  <div class="bg-red-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-handshake-slash text-red-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-red-800">
+                    യുഡിഎഫിന്റെ കേന്ദ്രാനുസരണ നിലപാട്
+                  </h3>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="bg-white rounded-lg p-4 border border-red-200">
+                    <h4 class="font-bold text-red-800 mb-2">
+                      <i class="fas fa-money-bill-wave mr-2"></i>
+                      സാമ്പത്തിക അവകാശങ്ങൾ കവർന്നെടുക്കപ്പെട്ടപ്പോഴുള്ള മൗനം
+                    </h4>
+                    <p class="text-red-700 text-sm leading-relaxed">
+                      കേന്ദ്ര സർക്കാർ കേരളത്തിന്റെ സാമ്പത്തിക അവകാശങ്ങൾ കവർന്നെടുത്തപ്പോൾ
+                      യുഡിഎഫ് സർക്കാർ പ്രതികരിക്കാൻ തയ്യാറായില്ല
+                      <a href="https://thefederal.com/category/states/south/kerala/ldf-kerala-polls-pinarayi-vijayan-udf-global-ayyappa-conclave-206447" class="citation" target="_blank">[16]</a>.
+                      കേന്ദ്രത്തിന്റെ സാമ്പത്തിക ഉപരോധത്തിന് പിന്തുണയ്ക്കുന്ന നിലപാട്
+                      സ്വീകരിച്ചു.
+                    </p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 border border-red-200">
+                    <h4 class="font-bold text-red-800 mb-2">
+                      <i class="fas fa-gavel mr-2"></i>
+                      കേന്ദ്ര ഉപരോധത്തിന് പിന്തുണ
+                    </h4>
+                    <p class="text-red-700 text-sm leading-relaxed">
+                      ഇത് സംസ്ഥാനത്തിന്റെ വികസനത്തേക്കാൾ രാഷ്ട്രീയ താൽപ്പര്യങ്ങൾക്കാണ്
+                      അവർ മുൻഗണന നൽകുന്നത് എന്നതിന്റെ തെളിവാണ്.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LDF's Defensive Approach -->
+              <div class="bg-green-50 rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                  <div class="bg-green-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-green-800">
+                    എൽഡിഎഫിന്റെ സംസ്ഥാന അധികാര സംരക്ഷണം
+                  </h3>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="bg-white rounded-lg p-4 border border-green-200">
+                    <h4 class="font-bold text-green-800 mb-2">
+                      <i class="fas fa-balance-scale mr-2"></i>
+                      ജിഎസ്ടി നഷ്ടപരിഹാരത്തിനായുള്ള സമരം
+                    </h4>
+                    <p class="text-green-700 text-sm leading-relaxed">
+                      എൽഡിഎഫ് സർക്കാർ കേന്ദ്ര സർക്കാരിന്റെ അസമമായ നയങ്ങളോട്
+                      പ്രതിരോധം സംഘടിപ്പിച്ചു. ജിഎസ്ടി വ്യവസ്ഥയിൽ കേരളത്തിന് നഷ്ടമുണ്ടെന്ന്
+                      തെളിയിച്ച് കേന്ദ്രത്തിന് മുന്നിൽ ശക്തമായ കേസ് അവതരിപ്പിച്ചു.
+                    </p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 border border-green-200">
+                    <h4 class="font-bold text-green-800 mb-2">
+                      <i class="fas fa-coins mr-2"></i>
+                      സാമ്പത്തിക സ്വയംഭരണത്തിനുള്ള നീക്കങ്ങൾ
+                    </h4>
+                    <p class="text-green-700 text-sm leading-relaxed">
+                      കേരള ബാങ്കിന്റെ രൂപീകരണം, കേരള ഫിനാൻഷ്യൽ കോർപ്പറേഷന്റെ
+                      ശക്തിപ്പെടുത്തൽ, സ്വന്തം വിഭവ സമാഹരണ മാർഗ്ഗങ്ങൾ എന്നിവ
+                      ഈ ദിശയിലുള്ള നീക്കങ്ങളാണ്.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Corruption Section -->
+      <section id="corruption" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              അഴിമതിയും വർഗീയ പ്രീണനവും
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <!-- Solar Scam -->
+              <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-yellow-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-solar-panel text-yellow-600"></i>
+                  </div>
+                  <h3 class="text-lg font-bold text-gray-800">സോളാർ കേസ്</h3>
+                </div>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  <strong>സോളാർ കേസ് യുഡിഎഫ് ഭരണത്തിലെ ഏറ്റവും വലിയ അഴിമതി കേസുകളിലൊന്നായിരുന്നു</strong>
+                  <a href="https://english.bharatexpress.com/india/sachin-pilot-slams-bjp-projects-udf-dominance-in-kerala-150210/amp" class="citation" target="_blank">[17]</a>.
+                  കോടിക്കണക്കിന് രൂപ തട്ടിയെടുത്ത സംഘം യുഡിഎഫ് മന്ത്രിമാരുമായി
+                  അടുത്ത ബന്ധം പുലർത്തിയിരുന്നു.
+                </p>
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+                  <p class="text-yellow-800 text-xs">
+                    <i class="fas fa-exclamation-triangle mr-1"></i>
+                    മുഖ്യമന്ത്രിയുടെ ഓഫീസിൽ വരെ അഴിമതിയുടെ കൈകൾ നീണ്ടു
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bar License Scam -->
+              <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-red-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-wine-bottle text-red-600"></i>
+                  </div>
+                  <h3 class="text-lg font-bold text-gray-800">ബാർ കോഴ വിവാദം</h3>
+                </div>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  <strong>ബാർ ലൈസൻസ് കോഴ വിവാദം യുഡിഎഫ് ഭരണത്തെ കുലുക്കി</strong>
+                  <a href="https://dograherald.com/2025/04/24/ldf-udf-failed-to-deliver-development-to-kerala-rajeev-chandrasekhar/" class="citation" target="_blank">[19]</a>.
+                  മദ്യ ബാറുകൾക്ക് ലൈസൻസ് നൽകുന്നതിനായി കോടിക്കണക്കിന് രൂപ
+                  കോഴ വാങ്ങിയതായി ആരോപണം ഉയർന്നു.
+                </p>
+                <div class="bg-red-50 border border-red-200 rounded-lg p-3">
+                  <p class="text-red-800 text-xs">
+                    <i class="fas fa-user-times mr-1"></i>
+                    ധനമന്ത്രി കെ.എം. മണി രാജിവെക്കേണ്ടി വന്നു
+                  </p>
+                </div>
+              </div>
+
+              <!-- Communal Appeasement -->
+              <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-purple-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-users text-purple-600"></i>
+                  </div>
+                  <h3 class="text-lg font-bold text-gray-800">വർഗീയ പ്രീണനം</h3>
+                </div>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  <strong>യുഡിഎഫ് അധികാരം പങ്കിടുന്നതിനായി ജാതി-മത ശക്തികളുമായി
+                    വിട്ടുവീഴ്ചകൾ നടത്തി</strong>
+                  <a href="https://sdma.kerala.gov.in/wp-content/uploads/2019/08/Memorandum2-Floods-2018.pdf" class="citation" target="_blank">[21]</a>.
+                  കേരളത്തിന്റെ മതനിരപേക്ഷ സ്വഭാവത്തിന് ഭീഷണിയായി.
+                </p>
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-3">
+                  <p class="text-purple-800 text-xs">
+                    <i class="fas fa-balance-scale-right mr-1"></i>
+                    മതനിരപേക്ഷതയ്ക്ക് ഭീഷണിയായ നിലപാടുകൾ
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pattur Land Case -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <div class="flex items-start space-x-4">
+                <div class="bg-orange-100 p-3 rounded-lg">
+                  <i class="fas fa-map-marked-alt text-orange-600 text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    പട്ടൂർ ഭൂമി കേസും ഭൂമാഫിയ ബന്ധവും
+                  </h3>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    പട്ടൂർ ഭൂമി കേസ് യുഡിഎഫ് ഭരണത്തിലെ മറ്റൊരു അഴിമതി കേസായിരുന്നു
+                    <a href="https://www.thehinducentre.com/verdict/the-voters-dilemma-in-kerala/article64936340.ece" class="citation" target="_blank">[42]</a>.
+                    തിരുവനന്തപുരത്ത് പട്ടൂരിലെ സർക്കാർ ഭൂമി അനധികൃതമായി കൈമാറ്റം
+                    ചെയ്തതായി ആരോപണം ഉയർന്നു.
+                  </p>
+
+                  <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                    <p class="text-orange-800 text-sm">
+                      <i class="fas fa-link mr-2"></i>
+                      <strong>ഭൂമാഫിയയുമായുള്ള ബന്ധം വ്യക്തമാക്കുന്ന ഈ കേസ്,</strong>
+                      യുഡിഎഫിന്റെ ഭൂനയത്തിന്റെ ദുർവിനിയോഗം എടുത്തുകാട്ടി.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Development Opposition Section -->
+      <section id="development-opposition" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              വികസന പദ്ധതികളോടുള്ള നശീകരണ സമീപനം
+            </h2>
+
+            <!-- SilverLine Opposition -->
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-8 mb-8">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="bg-red-100 p-3 rounded-lg">
+                  <i class="fas fa-train text-red-600 text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                    സിൽവർലൈൻ (കെ-റെയിൽ) പദ്ധതിക്കെതിരായ പ്രചാരണം
+                  </h3>
+                  <p class="text-gray-600">വികസന വിരുദ്ധ നിലപാടിന്റെ രാഷ്ട്രീയം</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <p class="text-gray-700 mb-6 leading-relaxed">
+                    <strong>സിൽവർലൈൻ (കെ-റെയിൽ) പദ്ധതിക്കെതിരെ കോൺഗ്രസും യുഡിഎഫും
+                      ചേർന്ന് വിനാശകരമായ പ്രചാരണങ്ങൾ നടത്തി</strong>
+                    <a href="https://english.deshabhimani.com/deshabhimani-english-/kerala-news/chooralmala-landslide-families-shift-support-cpim-26993" class="citation" target="_blank">[24]</a>.
+                    സംസ്ഥാനത്തിന്റെ അടിസ്ഥാന സൗകര്യ വികസനത്തിന് നിർണായകമായ ഈ പദ്ധതി,
+                    രാഷ്ട്രീയ നേട്ടത്തിനായി തടസ്സപ്പെടുത്താൻ യുഡിഎഫ് ശ്രമിച്ചു.
+                  </p>
+
+                  <div class="space-y-4">
+                    <div class="flex items-start">
+                      <i class="fas fa-exclamation-triangle text-red-500 mr-3 mt-1"></i>
+                      <div>
+                        <div class="font-semibold text-gray-800">രാഷ്ട്രീയ നേട്ടത്തിനായി</div>
+                        <div class="text-gray-600 text-sm">മുൻപ് വികസനത്തിന് വേണ്ടി സംസാരിച്ചിരുന്നവർ
+                          രാഷ്ട്രീയ നേട്ടത്തിനായി മാത്രം വികസന പദ്ധതികളെ തടസ്സപ്പെടുത്തി</div>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start">
+                      <i class="fas fa-leaf text-green-500 mr-3 mt-1"></i>
+                      <div>
+                        <div class="font-semibold text-gray-800">പരിസ്ഥിതി ആശങ്കകളുടെ ദുരുപയോഗം</div>
+                        <div class="text-gray-600 text-sm">പദ്ധതിയുടെ പരിസ്ഥിതി ആഘാതം
+                          വർദ്ധിപ്പിച്ച് കാണിക്കാൻ ശ്രമിച്ചു</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="Construction of SilverLine high-speed rail project in Kerala" class="w-full h-48 object-cover rounded-lg mb-4" size="medium" aspect="wide" style="photo" query="Kerala SilverLine project construction" referrerpolicy="no-referrer" />
+                  <p class="text-sm text-gray-600 text-center">
+                    സിൽവർലൈൻ പദ്ധതി - കേരളത്തിന്റെ അടിസ്ഥാന സൗകര്യ വികസനത്തിന് നിർണായകം
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- General Development Opposition -->
+            <div class="bg-gray-50 rounded-xl p-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                മറ്റ് അടിസ്ഥാന സൗകര്യ പദ്ധതികളിലെ തടസ്സപ്പെടുത്തൽ
+              </h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-3">
+                    <i class="fas fa-road text-blue-600 mr-2"></i>
+                    ദേശീയപാത വികസനം
+                  </h4>
+                  <p class="text-gray-700 text-sm">
+                    യുഡിഎഫ് ഭരണത്തിൽ സ്തംഭിച്ച ദേശീയപാത 66 വികസനം
+                    എൽഡിഎഫ് ഭരണത്തിൽ യാഥാർത്ഥ്യമാക്കി.
+                  </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-3">
+                    <i class="fas fa-industry text-green-600 mr-2"></i>
+                    ഗെയിൽ പൈപ്പ്‌ലൈൻ
+                  </h4>
+                  <p class="text-gray-700 text-sm">
+                    ഉപേക്ഷിക്കപ്പെട്ട പദ്ധതി എൽഡിഎഫ് ഭരണത്തിൽ
+                    പൂർത്തീകരിച്ചു.
+                  </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-3">
+                    <i class="fas fa-ship text-purple-600 mr-2"></i>
+                    തുറമുഖ പദ്ധതികൾ
+                  </h4>
+                  <p class="text-gray-700 text-sm">
+                    വിഴിഞ്ഞം തുറമുഖം പോലുള്ള പദ്ധതികൾക്ക് എതിർപ്പ്
+                    ഉയർത്തി.
+                  </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-3">
+                    <i class="fas fa-train text-orange-600 mr-2"></i>
+                    ഗതാഗത പദ്ധതികൾ
+                  </h4>
+                  <p class="text-gray-700 text-sm">
+                    കൊച്ചി മെട്രോ വിപുലീകരണം തടസ്സപ്പെടുത്താൻ
+                    ശ്രമിച്ചു.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-6 p-4 bg-red-100 border border-red-200 rounded-lg">
+                <p class="text-red-800 text-center">
+                  <i class="fas fa-exclamation-triangle mr-2"></i>
+                  <strong>രാഷ്ട്രീയ നേട്ടത്തിനായുള്ള ജനവിരുദ്ധ നീക്കങ്ങൾ</strong>
+                  - വികസനം തടസ്സപ്പെടുത്തുന്നതിൽ രാഷ്ട്രീയ നേട്ടം കണ്ടെത്തി.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LDF Achievements Section -->
+      <section id="ldf-achievements" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              എൽഡിഎഫിന്റെ വികസന നേട്ടങ്ങൾ (2016-2026)
+            </h2>
+
+            <!-- Infrastructure Projects -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                  <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-ship text-blue-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">വിഴിഞ്ഞം അന്താരാഷ്ട്ര തുറമുഖം</h3>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  <strong>100% നിർമ്മാണവും പ്രവർത്തനവും എൽഡിഎഫ് ഭരണകാലത്താണ്
+                    നടന്നത്</strong>
+                  <a href="https://peoplesdemocracy.in/2025/0525_pd/kerala-four-years-ldf-20" class="citation" target="_blank">[33]</a>.
+                  2023-ൽ ആദ്യ കപ്പൽ ലഭ്യമാക്കി, 2024-ൽ പൂർണ്ണ പ്രവർത്തനം ആരംഭിച്ചു.
+                </p>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                  <p class="text-blue-800 text-sm">
+                    <i class="fas fa-check-circle mr-1"></i>
+                    കേരളത്തിന്റെ ഏറ്റം വലിയ അടിസ്ഥാന സൗകര്യ പദ്ധതികളിലൊന്ന്
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                  <div class="bg-green-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-subway text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">കൊച്ചി മെട്രോയുടെ വിപുലീകരണം</h3>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  <strong>ഫസ്റ്റ് മൈൽ-ലാസ്റ്റ് മൈൽ കണക്റ്റിവിറ്റി</strong> ഉറപ്പാക്കുന്നതിനായി
+                  മെട്രോ നെറ്റ്‌വർക്ക് വിപുലീകരിച്ചു. കൊച്ചിയുടെ ഗതാഗത പ്രശ്നങ്ങൾക്ക്
+                  ദീർഘകാല പരിഹാരമാണിത്.
+                </p>
+                <div class="bg-green-50 border border-green-200 rounded-lg p-3">
+                  <p class="text-green-800 text-sm">
+                    <i class="fas fa-route mr-1"></i>
+                    ഗതാഗത സൗകര്യത്തിന്റെ മാതൃകാ പദ്ധതി
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- More Infrastructure -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-purple-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-plane text-purple-600"></i>
+                  </div>
+                  <h4 class="text-lg font-bold text-gray-800">കണ്ണൂർ വിമാനത്താവളം</h4>
+                </div>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  <strong>2018-ൽ പ്രവർത്തനം ആരംഭിച്ചു</strong>. വടക്കൻ കേരളത്തിന്റെ
+                  വികസനത്തിന് നിർണായകമായ ഈ പദ്ധതി എൽഡിഎഫ് ഭരണത്തിലാണ് യാഥാർത്ഥ്യമായത്.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-orange-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-industry text-orange-600"></i>
+                  </div>
+                  <h4 class="text-lg font-bold text-gray-800">ഗെയിൽ പൈപ്പ്‌ലൈൻ</h4>
+                </div>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  യുഡിഎഫ് ഭരണത്തിൽ ഉപേക്ഷിക്കപ്പെട്ട പദ്ധതി,
+                  <strong>എൽഡിഎഫ് ഭരണത്തിൽ പൂർത്തീകരിച്ചു</strong>
+                  <a href="https://peoplesdispatch.org/2026/01/23/guarantee-to-live-is-alive-in-kerala/" class="citation" target="_blank">[7]</a>.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-teal-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-home text-teal-600"></i>
+                  </div>
+                  <h4 class="text-lg font-bold text-gray-800">വീടും ഭൂമിയും മിഷൻ</h4>
+                </div>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  <strong>4,51,631 വീടുകൾ</strong> നിർമ്മിച്ച് കൈമാറി,
+                  <strong>4,00,956 ഭൂമി പട്ടയങ്ങൾ</strong> വിതരണം ചെയ്തു
+                  <a href="https://www.deshabhimani.com/deshabhimani-english-/kerala-news/4-11-lakh-title-deeds-distributed-in-kerala-since-ldf-came-to-power-85989" class="citation" target="_blank">[31]</a>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Poverty Alleviation -->
+            <div class="bg-gradient-to-r from-green-50 to-teal-50 rounded-xl p-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                ദാരിദ്ര്യ നിർമ്മാർജ്ജനം
+              </h3>
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <div class="bg-white rounded-lg p-6 shadow-sm mb-6">
+                    <h4 class="text-lg font-bold text-green-800 mb-3">
+                      അത്യന്തം ദരിദ്ര കുടുംബങ്ങളിലെ മുന്നേറ്റം
+                    </h4>
+                    <div class="text-center mb-4">
+                      <div class="text-3xl font-bold text-green-600 mb-1">79.22%</div>
+                      <div class="text-green-700">64,006 കുടുംബങ്ങളിലെ പിന്നോക്കം</div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      ഈ കുടുംബങ്ങളിൽ ഭൂരിഭാഗവും ദീർഘകാല ദാരിദ്ര്യത്തിൽ നിന്ന്
+                      മോചനം നേടി. വീട്, ഭൂമി, തൊഴിൽ, വിദ്യാഭ്യാസം, ആരോഗ്യം
+                      എന്നിവയിൽ സമഗ്രമായ ഇടപെടൽ നടത്തി
+                      <a href="https://morningstaronline.co.uk/article/inspiring-progress-kerala-under-its-left-government" class="citation" target="_blank">[34]</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-bold text-teal-800 mb-3">
+                      "അത്യന്തം ദരിദ്രരഹിത കേരളം" ലക്ഷ്യം
+                    </h4>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                      <strong>"അത്യന്തം ദരിദ്രരഹിത കേരളം"</strong> എന്ന ലക്ഷ്യം
+                      എൽഡിഎഫ് സർക്കാർ മുന്നോട്ടുവെച്ചു. 2026-ഓടെ അത്യന്തം
+                      ദരിദ്ര കുടുംബങ്ങളെ പൂർണ്ണമായി പിന്നോട്ടെടുക്കുക എന്ന
+                      ലക്ഷ്യത്തോടെ പ്രവർത്തനങ്ങൾ തുടരുന്നു.
+                    </p>
+
+                    <div class="bg-teal-50 border border-teal-200 rounded-lg p-3">
+                      <p class="text-teal-800 text-xs text-center">
+                        <i class="fas fa-bullseye mr-1"></i>
+                        സാമൂഹിക ന്യായത്തിന്റെ ഉയർന്ന രൂപം
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other States Performance Section -->
+      <section id="other-states" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 serif text-center">
+              കോൺഗ്രസ് ഭരിക്കുന്ന മറ്റ് സംസ്ഥാനങ്ങളിലെ പ്രകടനം
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+              <!-- Maharashtra -->
+              <div class="bg-red-50 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-red-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                  </div>
+                  <h3 class="text-lg font-bold text-red-800">മഹാരാഷ്ട്ര</h3>
+                </div>
+
+                <div class="space-y-3">
+                  <div class="bg-white rounded-lg p-3 border border-red-200">
+                    <h4 class="font-bold text-red-700 text-sm mb-1">ധനകാര്യ അശിസ്തത</h4>
+                    <p class="text-red-600 text-xs">അവസാന നിമിഷ ചെലവഴിപ്പ്,
+                      ഫലപ്രദമല്ലാത്ത വിനിയോഗം</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-3 border border-red-200">
+                    <h4 class="font-bold text-red-700 text-sm mb-1">ഉയർന്ന കടബാധ്യത</h4>
+                    <p class="text-red-600 text-xs">സാമ്പത്തിക സ്ഥിരതയെ
+                      ബാധിക്കുന്നു</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-3 border border-red-200">
+                    <h4 class="font-bold text-red-700 text-sm mb-1">ആസൂത്രണരഹിത വികസനം</h4>
+                    <p class="text-red-600 text-xs">യുഡിഎഫ് കാലത്തിന്റെ
+                      സാമ്യം</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Punjab -->
+              <div class="bg-orange-50 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-orange-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-map-marker-alt text-orange-600"></i>
+                  </div>
+                  <h3 class="text-lg font-bold text-orange-800">പഞ്ചാബ്</h3>
+                </div>
+
+                <div class="space-y-3">
+                  <div class="bg-white rounded-lg p-3 border border-orange-200">
+                    <h4 class="font-bold text-orange-700 text-sm mb-1">കടബാധ്യതാ പ്രതിസന്ധി</h4>
+                    <p class="text-orange-600 text-xs">4 ലക്ഷം കോടി രൂപ
+                      കടം ലക്ഷ്യം</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-3 border border-orange-200">
+                    <h4 class="font-bold text-orange-700 text-sm mb-1">അസന്തുലിതം</h4>
+                    <p class="text-orange-600 text-xs">ക്ഷേമ പദ്ധതികളും സാമ്പത്തിക
+                      ശിസ്തിയും തമ്മിൽ</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-3 border border-orange-200">
+                    <h4 class="font-bold text-orange-700 text-sm mb-1">വാഗ്ദാന വീഴ്ചകൾ</h4>
+                    <p class="text-orange-600 text-xs">പ്രഖ്യാപനങ്ങൾ മാത്രം,
+                      നടത്തിപ്പ് ഇല്ല</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Uttar Pradesh -->
+              <div class="bg-yellow-50 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-yellow-100 p-2 rounded-lg mr-3">
+                    <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                  </div>
+                  <h3 class="text-lg font-bold text-yellow-800">ഉത്തർപ്രദേശ്</h3>
+                </div>
+
+                <div class="space-y-3">
+                  <div class="bg-white rounded-lg p-3 border border-yellow-200">
+                    <h4 class="font-bold text-yellow-700 text-sm mb-1">ഫണ്ട് ദുരുപയോഗം</h4>
+                    <p class="text-yellow-600 text-xs">തെരഞ്ഞെടുപ്പ് ഫണ്ടിന്റെ
+                      ദുരുപയോഗം</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-3 border border-yellow-200">
+                    <h4 class="font-bold text-yellow-700 text-sm mb-1">വികസന വീഴ്ചകൾ</h4>
+                    <p class="text-yellow-600 text-xs">വാഗ്ദാനങ്ങളും യാഥാർത്ഥ്യവും
+                      തമ്മിൽ അന്തരം</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-3 border border-yellow-200">
+                    <h4 class="font-bold text-yellow-700 text-sm mb-1">സാമ്പത്തിക അശിസ്തത</h4>
+                    <p class="text-yellow-600 text-xs">വികസനം പിന്നോട്ടുപോയി</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Performance Comparison Table -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
+              <h3 class="text-2xl font-bold text-indigo-800 mb-6 text-center">
+                പ്രകടന താരതമ്യം
+              </h3>
+
+              <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow-sm">
+                  <thead class="bg-indigo-100">
+                    <tr>
+                      <th class="px-4 py-3 text-left text-sm font-bold text-indigo-800">സംസ്ഥാനം</th>
+                      <th class="px-4 py-3 text-left text-sm font-bold text-indigo-800">പ്രധാന വാഗ്ദാനങ്ങൾ</th>
+                      <th class="px-4 py-3 text-center text-sm font-bold text-indigo-800">നടത്തിപ്പ് നിരക്ക്</th>
+                      <th class="px-4 py-3 text-left text-sm font-bold text-indigo-800">ഫലം</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-4 py-3 text-sm text-gray-800">മഹാരാഷ്ട്ര</td>
+                      <td class="px-4 py-3 text-sm text-gray-700">കാർഷിക കടം മാഫി, തൊഴിൽ</td>
+                      <td class="px-4 py-3 text-center">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">&lt;50%</span>
+                      </td>
+                      <td class="px-4 py-3 text-sm text-gray-700">അവസാന നിമിഷ ചെലവഴിപ്പ്</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-4 py-3 text-sm text-gray-800">പഞ്ചാബ്</td>
+                      <td class="px-4 py-3 text-sm text-gray-700">ക്ഷേമ പദ്ധതികൾ, തൊഴിൽ</td>
+                      <td class="px-4 py-3 text-center">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">&lt;40%</span>
+                      </td>
+                      <td class="px-4 py-3 text-sm text-gray-700">കടബാധ്യതാ പ്രതിസന്ധി</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-4 py-3 text-sm text-gray-800">ഉത്തർപ്രദേശ്</td>
+                      <td class="px-4 py-3 text-sm text-gray-700">വികസന പദ്ധതികൾ</td>
+                      <td class="px-4 py-3 text-center">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">&lt;30%</span>
+                      </td>
+                      <td class="px-4 py-3 text-sm text-gray-700">ഫണ്ട് ദുരുപയോഗം</td>
+                    </tr>
+                    <tr class="hover:bg-green-50 bg-green-50">
+                      <td class="px-4 py-3 text-sm text-gray-800 font-bold">കേരളം (എൽഡിഎഫ്)</td>
+                      <td class="px-4 py-3 text-sm text-gray-700 font-bold">580 വാഗ്ദാനങ്ങൾ</td>
+                      <td class="px-4 py-3 text-center">
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">96.7%</span>
+                      </td>
+                      <td class="px-4 py-3 text-sm text-gray-700 font-bold">വിജയകരം</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="mt-6 text-center">
+                <div class="inline-flex items-center bg-green-100 rounded-full px-6 py-3">
+                  <i class="fas fa-trophy text-green-600 mr-2"></i>
+                  <span class="text-green-800 font-bold">എൽഡിഎഫിന്റെ പ്രകടനം മികച്ചത്</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- UDF Promises Reality Check -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                യുഡിഎഫിന്റെ പുതിയ വാഗ്ദാനങ്ങൾ: തട്ടിപ്പ് അല്ലെങ്കിൽ യാഥാർത്ഥ്യം?
+              </h3>
+
+              <div class="text-center mb-6">
+                <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="Political promises versus actual achievements comparison" class="w-full h-48 object-cover rounded-lg mb-4" size="medium" aspect="wide" style="photo" query="political promises vs reality" referrerpolicy="no-referrer" />
+              </div>
+
+              <p class="text-gray-700 leading-relaxed text-center">
+                കോൺഗ്രസ് ഭരിക്കുന്ന മറ്റ് സംസ്ഥാനങ്ങളിലെ അനുഭവം വിലയിരുത്തുമ്പോൾ,
+                <strong>യുഡിഎഫിന്റെ പുതിയ വാഗ്ദാനങ്ങൾ സംശയാസ്പദമാണ്</strong>.
+                മഹാരാഷ്ട്ര, പഞ്ചാബ്, ഉത്തർപ്രദേശ് എന്നിവിടങ്ങളിൽ കോൺഗ്രസ് നൽകിയ
+                വാഗ്ദാനങ്ങൾ പലതും നിറവേറ്റപ്പെട്ടില്ല. ഇതേ പാർട്ടിയുടെ കേരള
+                ഘടകമായ യുഡിഎഫിന്റെ വാഗ്ദാനങ്ങൾ എങ്ങനെ വിശ്വസനീയമാകും?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion Section -->
+      <section id="conclusion" class="py-16 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 serif">ഉപസംഹാരം: കേരളത്തിന്റെ ഭാവി എന്തിനെ ആശ്രയിക്കുന്നു?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <!-- UDF Setback -->
+              <div class="bg-red-600/20 backdrop-blur-sm rounded-xl p-6 border border-red-400/30">
+                <div class="text-4xl mb-4">
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">യുഡിഎഫ് അധികാരം</h3>
+                <p class="text-red-200 text-sm leading-relaxed">
+                  വികസന പദ്ധതികളുടെ സ്തംഭനം, സാമൂഹിക ക്ഷേമത്തിലെ കുറവ്,
+                  കോർപ്പറേറ്റ് മുൻഗണന, പിന്നോട്ടുപോക്ക്
+                </p>
+              </div>
+
+              <!-- LDF Continuation -->
+              <div class="bg-green-600/20 backdrop-blur-sm rounded-xl p-6 border border-green-400/30">
+                <div class="text-4xl mb-4">
+                  <i class="fas fa-arrow-up"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">എൽഡിഎഫ് തുടർച്ച</h3>
+                <p class="text-green-200 text-sm leading-relaxed">
+                  പദ്ധതികളുടെ പൂർത്തീകരണം, ദീർഘകാല ആസൂത്രണം,
+                  വികസന നരകത്തിൽ നിന്ന് മോചനം
+                </p>
+              </div>
+
+              <!-- People's Development -->
+              <div class="bg-blue-600/20 backdrop-blur-sm rounded-xl p-6 border border-blue-400/30">
+                <div class="text-4xl mb-4">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">ജനകേന്ദ്രീകൃത വികസനം</h3>
+                <p class="text-blue-200 text-sm leading-relaxed">
+                  സാമൂഹിക ന്യായം, സാമ്പത്തിക സമത്വം,
+                  പരിസ്ഥിതി സുസ്ഥിരത
+                </p>
+              </div>
+            </div>
+
+            <!-- Final Message -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <p class="text-xl leading-relaxed mb-6">
+                <strong>ചുരുക്കത്തിൽ,</strong> കോൺഗ്രസ് ഭരിക്കുന്ന സംസ്ഥാനങ്ങളിലും
+                യുഡിഎഫ് ഭരണകാലത്തും സാമൂഹിക മൂലധന നിർമ്മാണത്തേക്കാൾ ഉപരിയായി
+                സ്വകാര്യ താല്പര്യങ്ങൾക്കും അധികാര കൈമാറ്റങ്ങൾക്കുമാണ് പ്രാധാന്യം
+                നൽകുന്നത്
+                <a href="https://www.manoramaonline.com/news/kerala/2025/03/08/kerala-cpm-privatization-contradiction.html" class="citation" target="_blank">[12]</a>.
+              </p>
+
+              <p class="text-xl leading-relaxed">
+                <strong>യുഡിഎഫ് അധികാരത്തിൽ വരുന്നത് കേരളം നേടിയെടുത്ത വികസന
+                  നേട്ടങ്ങളെ തകർക്കാനും പദ്ധതികൾ ഉപേക്ഷിക്കപ്പെടാനും മാത്രമേ
+                  സഹായിക്കൂ</strong>
+                <a href="https://english.dhanamonline.com/business-kerala/kerala-budget-sets-aside-rs-14500-crore-for-social-security-pensions-asha-workers-to-get-rs-1000-hike-9002661" class="citation" target="_blank">[28]</a>.
+              </p>
+
+              <div class="mt-8">
+                <div class="inline-flex items-center bg-green-600/30 rounded-full px-6 py-3">
+                  <i class="fas fa-lightbulb mr-2"></i>
+                  <span class="font-bold">എൽഡിഎഫിന്റെ ജനകേന്ദ്രീകൃത വികസന മാതൃക തുടരുന്നതാണ് കേരളത്തിന്റെ ഭാവിക്ക് ഉത്തമം</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.toc-link');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+  </body>
+
+</html>
